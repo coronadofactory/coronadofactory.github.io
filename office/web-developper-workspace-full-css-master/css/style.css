@@ -992,6 +992,26 @@ body {
   text-align: center;
   padding-top: 7px; }
 
+.note1 {
+  width: 31px;
+  height: 21px;
+  position: absolute;
+  background: #f9ec3e;
+  bottom: -33px;
+  border-top: 6px solid #cac222;
+  -webkit-transform: rotate(-12deg);
+  -moz-transform: rotate(-12deg);
+  -ms-transform: rotate(-12deg);
+  -o-transform: rotate(-12deg);
+  transform: rotate(-12deg);
+  -webkit-box-shadow: 0 1px 2px gainsboro;
+  -moz-box-shadow: 0 1px 2px gainsboro;
+  box-shadow: 0 1px 2px gainsboro;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 7px;
+  margin-left: 43px }
+
 /*
 /*
 /* =============================================== /*

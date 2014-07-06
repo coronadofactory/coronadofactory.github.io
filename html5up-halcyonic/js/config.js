@@ -6,7 +6,7 @@
 
 window._skel_config = {
 	preset: 'standard',
-	prefix: 'css/style',
+	prefix: 'html5up-halcyonic/css/style',
 	resetCSS: true,
 	breakpoints: {
 		'1000px': {
