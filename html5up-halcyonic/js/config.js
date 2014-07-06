@@ -6,7 +6,7 @@
 
 window._skel_config = {
 	preset: 'standard',
-	prefix: 'html5up-halcyonic/css/style',
+	prefix: 'http://factory.coronadoland.com/html5up-halcyonic/css/style',
 	resetCSS: true,
 	breakpoints: {
 		'1000px': {
