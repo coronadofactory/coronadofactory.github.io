@@ -6,7 +6,7 @@
 
 window._skel_config = {
 	preset: 'standard',
-	prefix: 'http://coronadofactory.com/html5up-theme/css/style',
+	prefix: 'http://coronadofactory.com/halcyonic-theme/css/style',
 	resetCSS: true,
 	breakpoints: {
 		'1000px': {
