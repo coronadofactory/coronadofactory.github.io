@@ -103,6 +103,32 @@
 									</section>
 									<section>
 										<header>
+											<h2>Is your page optimized for Google Mobile Friendly</h2>
+											<h3>Check it:</h3>
+										</header>
+										<p><form id="googlefriendly" action="https://www.google.com/webmasters/tools/mobile-friendly" method="GET">Type your URL<input type="text" name="url"></input><input type="button" value="Check"></input></form>
+
+<script>
+$(document).ready(function() {
+	var btn = $('#googlefriendly input[type=button]');
+	var inp = $('#googlefriendly input[type=text]');
+	
+	btn.on('click', function(e) {
+		btn.attr('disabled','disabled');
+		e.preventDefault();
+		ga('send', 'checkgooglemobile');
+		
+		var url = (inp.val()=='')?('http://coronadofactory.com'):(inp.val());
+		
+		setTimeout(function(){document.location.href='https://www.google.com/webmasters/tools/mobile-friendly/?url=' + encodeURI(url);}, 500);
+	});
+});
+</script>
+
+
+									</section>
+									<section>
+										<header>
 											<h2>Why Love Coding</h2>
 											<h3>See the video</h3>
 										</header>
