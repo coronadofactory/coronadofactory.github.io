@@ -24,3 +24,6 @@ fi
 
 curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-launch.sh -o ~/bin/cf
 chmod 750 ~/bin/cf
+
+echo ""
+echo "cf installed in $bin"
