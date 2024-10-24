@@ -47,3 +47,28 @@ span.bold {
 section.box-height {
     min-height:640px
 }
+
+.image-paragraph {
+    max-width:720px;
+}
+
+/* Large */
+
+@media screen and (max-width: 1280px) {
+
+}
+
+/* Small */
+
+@media screen and (max-width: 736px) {
+
+    .image-paragraph {
+        max-width:512px;
+    }
+}
+
+/* Medium */
+
+@media screen and (max-width: 980px) {
+
+}
