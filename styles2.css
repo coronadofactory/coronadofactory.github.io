@@ -62,15 +62,6 @@ section.box-height {
     
 }
 
-/* Small */
-
-@media screen and (max-width: 736px) {
-
-    .image-paragraph {
-        max-width:320px;
-    }
-}
-
 /* Medium */
 
 @media screen and (max-width: 980px) {
@@ -80,3 +71,11 @@ section.box-height {
     }
 }
 
+/* Small */
+
+@media screen and (max-width: 736px) {
+
+    .image-paragraph {
+        max-width:240px;
+    }
+}
