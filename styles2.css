@@ -67,7 +67,7 @@ section.box-height {
 @media screen and (max-width: 736px) {
 
     .image-paragraph {
-        max-width:512px;
+        max-width:320px;
     }
 }
 
