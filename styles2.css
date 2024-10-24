@@ -48,6 +48,7 @@ section.box-height {
     min-height:640px
 }
 
+
 .image-paragraph {
     max-width:720px;
 }
@@ -67,7 +68,7 @@ section.box-height {
 @media screen and (max-width: 980px) {
 
     .image-paragraph {
-        max-width:512px;
+        max-width:840px;
     }
 }
 
@@ -82,5 +83,8 @@ section.box-height {
     section.box-height {
         min-height:420px
     }
-
+    
+    
 }
+
+
