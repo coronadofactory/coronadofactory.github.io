@@ -78,4 +78,9 @@ section.box-height {
     .image-paragraph {
         max-width:240px;
     }
+
+    section.box-height {
+        min-height:420px
+    }
+
 }
