@@ -56,6 +56,10 @@ section.box-height {
 
 @media screen and (max-width: 1280px) {
 
+    .image-paragraph {
+        max-width:720px;
+    }
+    
 }
 
 /* Small */
@@ -71,4 +75,8 @@ section.box-height {
 
 @media screen and (max-width: 980px) {
 
+    .image-paragraph {
+        max-width:512px;
+    }
 }
+
