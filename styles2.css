@@ -53,6 +53,10 @@ section.box-height {
     max-width:720px;
 }
 
+.paragraph p {
+    font-size:1.2em
+}
+
 /* Large */
 
 @media screen and (max-width: 1280px) {
@@ -70,6 +74,11 @@ section.box-height {
     .image-paragraph {
         max-width:840px;
     }
+
+    .paragraph p {
+        font-size:1em
+    }
+
 }
 
 /* Small */
@@ -84,10 +93,8 @@ section.box-height {
         min-height:420px
     }
     
+    .paragraph p {
+        font-size:1em
+    }
     
-}
-
-
-.paragraph {
-    font-size:1.2em
 }
