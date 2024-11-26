@@ -1,7 +1,7 @@
 (function(document) {
   const 
   embed = document.querySelector("[embed]").getAttribute("embed"), 
-  src = 'https://minerva.coronadofactory.com/'+embed+'.js', 
+  src = 'https://dashboard.coronadoland.com/'+embed+'/'+embed+'.js', 
   body = document.getElementsByTagName('body')[0], 
   script = document.createElement('script');
 
