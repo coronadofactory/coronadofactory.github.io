@@ -28,5 +28,4 @@ case "${1:-}" in
         ;;
 esac
 
-echo "Type:"
-echo "curl -s https://raw.githubusercontent.com/coronadofactory/$MODULE/refs/heads/main/cf-install.sh $MODULE"
+curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-install.sh | sh -s -- docker install $MODULE
