@@ -10,20 +10,16 @@
 # https://raw.githubusercontent.com/coronadofactory/hexagonal/refs/heads/main/LICENSE.txt
 #
 # Date: 2024-10-03
-#
+# Rev:2026-10-01
 
-echo "cf installer"
+case "$1" in
+    docker)
+        MODULE=$1
+        ;;
+    *)
+        echo "Invalid module $1 to install" >&2
+        exit 1
+        ;;
+esac
 
-bin=`echo ~/bin`
-if [ ! -d "$bin" ]; then
-  echo "Execute mkdir ~/bin"
-  echo "Execute add ~/bin in .bash_profile or .zshrc"
-  exit
-fi
-
-
-curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-launch.sh -o ~/bin/cf
-chmod 750 ~/bin/cf
-
-echo ""
-echo "cf installed in $bin"
+curl -s https://raw.githubusercontent.com/coronadofactory/$MODULE/refs/heads/main/cf-install.sh $MODULE
