@@ -28,4 +28,5 @@ case "${1:-}" in
         ;;
 esac
 
-curl -s https://raw.githubusercontent.com/coronadofactory/$MODULE/refs/heads/main/cf-install.sh $MODULE
+echo "Type:"
+echo "curl -s https://raw.githubusercontent.com/coronadofactory/$MODULE/refs/heads/main/cf-install.sh $MODULE"
