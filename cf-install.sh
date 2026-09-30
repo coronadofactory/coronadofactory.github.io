@@ -30,7 +30,7 @@ while :; do
             break
             ;;
         2)
-            exit
+            break
             ;;
         *)
             echo "Invalid option."
@@ -39,4 +39,6 @@ while :; do
     esac
 done
 
-curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-installer.sh | sh -s -- install $MODULE
+if [ -n "$MODULE" ]; then
+  curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-installer.sh | sh -s -- install $MODULE
+fi
