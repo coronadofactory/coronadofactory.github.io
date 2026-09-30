@@ -12,20 +12,31 @@
 # Date: 2024-10-03
 # Rev:2026-10-01
 
-case "${1:-}" in
-    docker)
-        MODULE=$1
-        ;;
+echo "***********************************************"
+echo "* Hello. Welcome to coronadofactory installer *"
+echo "***********************************************"
+echo ""
+echo "What would you like to install?"
+echo " 1) Docker" 
+echo " 2) Exit"
 
-    "")
-        echo "Module parameter is required" >&2
-        exit 1
-        ;;
+while :; do
+    printf "Please select an option: "
+    read -r option
 
-    *)
-        echo "Invalid module $1 to install" >&2
-        exit 1
-        ;;
-esac
+    case "$option" in
+        1)
+            MODULE=docker
+            break
+            ;;
+        2)
+            exit
+            ;;
+        *)
+            echo "Invalid option."
+            echo
+            ;;
+    esac
+done
 
-curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-install.sh | sh -s -- docker install $MODULE
+curl -s https://raw.githubusercontent.com/coronadofactory/devops/refs/heads/main/cf-installer.sh | sh -s -- install $MODULE
